@@ -1,0 +1,8 @@
+import pandas as pd
+
+df = pd.read_csv("covid_data.csv")
+
+# Convert to JSON
+df.to_json("covid_data.json", orient="records")
+
+print("CSV converted to JSON successfully!")
